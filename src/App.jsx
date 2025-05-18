@@ -13,7 +13,7 @@ const App = () => {
     <div className="container  flex  flex-col items-center justify-start bg-y w-[100vw] h-screen gap-8"
     
       style={{
-    backgroundImage: "url('src/assets/images/bg_img.webp')",
+    backgroundImage: "url('src/assets/images/bg_img.jpg')",
     backgroundSize: 'contain',
     backgroundRepeat: 'repeat',
     backgroundPosition: 'center',
