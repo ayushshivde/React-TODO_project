@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Create from "./components/Create";
 import Read from "./components/Read";
 import "./index.css"
+import bgImg from './assets/images/bg.img.jpg'; 
 const App = () => {
   
   const [todos, settodos] = useState([
@@ -13,7 +14,7 @@ const App = () => {
     <div className="container  flex  flex-col items-center justify-start bg-y w-[100vw] h-screen gap-8"
     
       style={{
-    backgroundImage: "url('src/assets/images/bg_img.jpg')",
+    backgroundImage: `url(${bgImg})`,
     backgroundSize: 'contain',
     backgroundRepeat: 'repeat',
     backgroundPosition: 'center',
