@@ -1,6 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Read = (props) => {
   const { todos, settodos } = props;
@@ -10,6 +13,18 @@ const Read = (props) => {
       return todo.id !== id;
     });
     settodos(filterTodo);
+toast.error("Task Deleted Successfully", {
+  position: "top-left",
+  autoClose: 2000,
+  hideProgressBar: true,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  className: "my-toast",
+  
+});
+
   };
 
   const renderTodos = todos.map((todo) => {

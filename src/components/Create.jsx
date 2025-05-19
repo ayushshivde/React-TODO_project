@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import { useState } from "react";
 import { faTableList } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { toast } from "react-toastify";
 
 const Create = (props) => {
   const { todos, settodos } = props;
@@ -28,6 +29,18 @@ const Create = (props) => {
 
     settodos([newTodo, ...todos]);
     settitle("");
+
+    toast.success("Task Added Successfully", {
+      position: "top-left",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+  className: "my-toast",
+
+    });
   };
 
   return (
