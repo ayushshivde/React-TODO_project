@@ -10,6 +10,7 @@ const App = () => {
     { id: 2, title: "Todo 2", iscompleted: false },
   ]);
 
+    console.log(bgImg)
   return (
     <div className="container  flex  flex-col items-center justify-start bg-y w-[100vw] h-screen gap-8"
     
