@@ -30,7 +30,7 @@ const Create = (props) => {
     settodos([newTodo, ...todos]);
     settitle("");
 
-    toast.success("Task Added guatam", {
+    toast.success("Task Added Successfully", {
       position: "top-left",
       autoClose: 2000,
       hideProgressBar: true,
